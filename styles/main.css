@@ -1,0 +1,141 @@
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #F1F1F1;
+  color: #3C3C3C;
+  font-family: Arial;
+}
+
+/*HEADER*/
+
+h1 {
+  /*font-size: 50px;*/
+  font-family: 'Bangla MN', 'Verdana', 'sans-serif'; 
+  font-size: 20px;
+  /*font-family: url('../fonts/')*/
+  /* @font-face gebruiken */
+}
+
+li a {
+  text-transform: uppercase;
+  font-family: Arial BLack;
+  color: #3C3C3C;
+  font-size: 13px;
+  padding: 0 10px 0 10px;
+}
+
+a:hover {
+    color: #BA8447;
+}
+
+/*HEADER AFBEELDING*/
+
+img {
+ max-width: 100%;
+}
+
+.mood-image {
+  position: relative;
+}
+
+.mood-image h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 20% 0 0 0;
+  font-size: 30px;
+}
+
+/*TEXT KOLOM*/
+
+h2 {
+  /*font-size: 55px;*/
+  font-family: Arial Black;
+  text-transform: uppercase;
+  font-size: 15px;
+  /*max-width: 100px;
+  padding: 0.4em;
+  border-radius: 0.2em;*/
+}
+
+.welkom h2 {
+  margin: 10px 0 5px 0; 
+}
+
+p {
+  font-size: 13px;
+}
+
+/* IPAD SIZE */
+@media only screen and (min-width: 768px) {
+  .navigation h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .navigation p {
+    text-align: center;
+    font-family: Arial Black;
+    font-size: 13px;
+  }
+
+  .mood-image h2 {
+    font-size: 40px;
+    padding: 15% 0 0 0;
+  }
+}
+
+/* DESKTOP SIZE */
+@media only screen and (min-width: 1024px) {
+
+  li a {
+    padding: 0 30px 0 30px;
+    font-size: 15px;
+    }
+
+   .mood-image h2 {
+    font-size: 45px;
+    padding: 13% 0 0 0;
+  }
+
+  .aside a {
+  color: #3C3C3C;
+  }
+
+  .meer {
+    text-align: right;
+    padding-bottom: 5px;
+  }
+
+}
+
+/*DESKTOP+ SIZE*/
+
+@media only screen and (min-width: 1600px) {
+
+   .mood-image h2 {
+    font-size: 60px;
+    padding: 10% 0 0 0;
+  }
+
+}
+
+
+
+
+

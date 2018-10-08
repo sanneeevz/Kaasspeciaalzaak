@@ -1,0 +1,222 @@
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	/*grid-gap: 10px 10px;*/
+
+	grid-template-areas:
+		"header"
+		"text"
+		"store"
+		"aside";
+}
+
+/*HEADER*/
+
+.header {
+	grid-area: header;
+}
+
+.navigation {
+	display: flex;
+	flex-flow: row;
+	margin-top: 
+	/*justify-content: space-between;*/
+	/*align-items: stretch;*/
+}
+.navigation h1 {
+	width: 100%;
+	margin: 15px 0px 0px 25px;
+/*	margin top right bottom left*/
+}
+
+.navigation p {
+	display: none;
+}
+
+.navigation img {
+	width: 18px;
+	height: 18px;
+	margin: 18px 10px 0px 5px;
+}
+
+/*HEADER AFBEELDING*/
+
+.kaas-image{
+    width: 100%;
+    height: auto;
+}
+
+/*TEXT KOLOM*/
+
+.text {
+	margin: 0 20px 15px 15px;
+}
+
+.text img {
+	margin: 15px 0px 15px 0px;
+}
+
+.facebook {
+	margin: 20px 0 0 0;
+}
+
+/*CONTACT KOLOM*/
+
+.store img{
+	margin: 0px 5px 0px 5px;
+	width: 100%;
+}
+
+.contact {
+	padding: 15px 0 15px 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.store {
+	grid-area: store;
+}
+
+
+
+.aside {
+	grid-area: aside;
+	display: none;
+/*	grid-column: 1/ span 2;*/
+}
+
+.aside img {
+	width: 100%;
+}
+
+.aside a {
+	font-style: italic;
+	text-align: center;
+}
+
+.kaassoep {
+	padding: 0 10px 35px 10px;
+	/*	margin top right bottom left*/
+}
+
+.piemonte {
+	padding: 0 10px 0 10px;
+}
+
+nav {
+	display: none;
+}
+
+/* IPAD SIZE */
+@media only screen and (min-width: 768px) {
+
+	.grid-container{
+		grid-template-columns: 1fr 1.9fr;
+		/*grid-gap: 10px 10px;*/
+
+		grid-template-areas:
+			"header header"
+			"store text"
+			"aside aside";
+	}
+
+/*	HEADER*/
+
+	.navigation,
+	nav {
+		display: block;
+	}
+
+	.navigation h1 {
+		width: 100%;
+		margin: 15px 0px -12px 0px;
+	}
+
+	.navigation p {
+		display: block;
+		margin: 0px 0px 10px 0px;
+	}
+
+	.navigation li {
+		padding: 0 10px 0 10px;
+	}
+
+	.navigation img{
+		display: none;
+	}
+
+	nav {
+		position: relative;
+		z-index: 2;
+	}
+
+	nav ul {
+		width: 100%;
+		list-style: none;
+		display: flex;
+		justify-content: center;
+	}
+	nav ul li {
+		padding: 20px;
+	}
+
+	.mood-image {
+		top: -50px;
+		z-index: 0;
+	}
+
+/*	RECHTER KOLOM*/
+
+	.aside {
+	grid-area: aside;
+	display: none;
+	/*	grid-column: 1/ span 2;*/
+	}
+
+	.aside img {
+		width: 100%;
+	}
+
+	.aside a {
+		font-style: italic;
+		text-align: center;
+	}
+
+	.kaassoep {
+		padding: 0 10px 35px 10px;
+		/*	margin top right bottom left*/
+	}
+
+	.piemonte {
+		padding: 0 10px 0 10px;
+	}
+}
+
+/* DESKTOP SIZE */
+@media only screen and (min-width: 1024px) {
+	.grid-container{
+		grid-template-columns: 1fr 2fr 1fr;
+		/*grid-gap: 10px 10px;*/
+
+		grid-template-areas:
+			"header header header"
+			"store text aside"
+	}
+
+	/*RECHTER KOLOM*/
+
+	.aside {
+		display: block;
+	}
+}
+
+/*DESKTOP+ SIZE*/
+@media only screen and (min-width: 1600px) {
+
+}
+
+
+
+
+
+
