@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
 }
 
+
 *, 
 *:before,
 *:after{
@@ -49,7 +50,7 @@ nav ul {
 
 li a {
   text-transform: uppercase;
-  font-family: Arial BLack;
+  font-family: Arial Black, sans-serif;
   color: #3C3C3C;
   font-size: 13px;
   padding: 0 10px 0 10px;
@@ -87,7 +88,7 @@ img {
 
 h2 {
   /*font-size: 55px;*/
-  font-family: Arial Black;
+  font-family: Arial Black, sans-serif;
   text-transform: uppercase;
   font-size: 15px;
   /*max-width: 100px;
@@ -125,7 +126,7 @@ p {
 
   .navigation p {
     text-align: center;
-    font-family: Arial Black;
+    font-family: Arial Black, sans-serif;
     font-size: 13px;
   }
 
