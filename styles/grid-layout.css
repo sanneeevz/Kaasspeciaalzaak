@@ -18,8 +18,7 @@
 
 .navigation {
 	display: flex;
-	flex-flow: row;
-	margin-top: 
+	flex-flow: column;
 	/*justify-content: space-between;*/
 	/*align-items: stretch;*/
 }
@@ -210,10 +209,6 @@ nav {
 	}
 }
 
-/*DESKTOP+ SIZE*/
-@media only screen and (min-width: 1600px) {
-
-}
 
 
 

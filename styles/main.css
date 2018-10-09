@@ -29,18 +29,40 @@ h1 {
   /* @font-face gebruiken */
 }
 
+
+.active{
+  display: initial;
+}
+
+.menutoggle a{
+  font-size: 50px;
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul {
+  position: relative;
+  text-align: center;
+  line-height: 50px;
+  z-index: 2;
+}
+
 li a {
   text-transform: uppercase;
   font-family: Arial BLack;
   color: #3C3C3C;
   font-size: 13px;
   padding: 0 10px 0 10px;
+  text-decoration: none;
 }
 
 a:hover {
     color: #BA8447;
 }
 
+.navigation-holder {
+  display: flex;
+}
 /*HEADER AFBEELDING*/
 
 img {
@@ -81,8 +103,21 @@ p {
   font-size: 13px;
 }
 
+.inactive{
+  display: none;
+}
+
+.active{
+  display: initial;
+}
+
 /* IPAD SIZE */
 @media only screen and (min-width: 768px) {
+
+  .inactive{
+    display: initial;
+  }
+
   .navigation h1 {
     text-align: center;
     font-size: 30px;
@@ -97,6 +132,14 @@ p {
   .mood-image h2 {
     font-size: 40px;
     padding: 15% 0 0 0;
+  }
+
+  .navigation-holder {
+    flex-direction: column;
+  }
+
+  .menutoggle{
+    display: none;
   }
 }
 
@@ -120,9 +163,13 @@ p {
   .meer {
     text-align: right;
     padding-bottom: 5px;
+    text-decoration: none;
   }
 
+
 }
+
+
 
 /*DESKTOP+ SIZE*/
 
@@ -132,6 +179,8 @@ p {
     font-size: 60px;
     padding: 10% 0 0 0;
   }
+
+
 
 }
 
